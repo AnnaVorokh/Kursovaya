@@ -10,8 +10,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 function trial() {
 var form = document.getElementById('trialForm');
-    if (form != null) {
+    if (form.value.length != 0) {
         alert('Форма отправлена! Мы свяжемся с вами в ближайшее время.');
         form.reset();
-    }
+    } else {
+        alert('Форма не заполнена!');
+        form.reset();
 }
