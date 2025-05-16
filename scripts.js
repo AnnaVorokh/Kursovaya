@@ -9,6 +9,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 function trial() {
+var form = document.getElementById('trialForm');
     if (form) {
         const form = document.getElementById('trialForm');
         alert('Форма отправлена! Мы свяжемся с вами в ближайшее время.');
