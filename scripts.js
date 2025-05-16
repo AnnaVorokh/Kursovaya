@@ -9,7 +9,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 function trial() {
-    const form = document.getElementById('trialForm');
-    alert('Форма отправлена! Мы свяжемся с вами в ближайшее время.');
-    form.reset();
+    if (form) {
+        const form = document.getElementById('trialForm');
+        alert('Форма отправлена! Мы свяжемся с вами в ближайшее время.');
+        form.reset();
+    }
 }
