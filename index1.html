@@ -122,30 +122,29 @@
         </div>
         <div class="feedback-item">
         <p>подберём педагога, выберем программу обучения и составим график посещения</p>
-        <form class="trialForm">        
-            <div class="form-group">
-                <select id="format">
-                    <option value="" disabled selected>Выберите формат</option>
-                    <option value="online">Онлайн</option>
-                    <option value="offline">Оффлайн</option>
-                </select>
-            </div>
-            
-            <div class="form-group">
-                <input type="text" id="name" placeholder="Имя" required>
-            </div>
+        <form id="trialForm" class="trialForm">        
+    <div class="form-group">
+        <select id="format">
+            <option value="" disabled selected>Выберите формат</option>
+            <option value="online">Онлайн</option>
+            <option value="offline">Оффлайн</option>
+        </select>
+    </div>
+    
+    <div class="form-group">
+        <input type="text" id="name" placeholder="Имя" required>
+    </div>
 
-            <div class="form-group">
-                <input type="text" id="age" placeholder="Возраст" required>
-            </div>
-            
-            <div class="form-group">
-                <input type="tel" id="phone" placeholder="Телефон" required>
-            </div>
-            
-            <button type="submit" onclick="trial()" class="submit-btn"">Записаться на занятие</button>
-            
-        </form>
+    <div class="form-group">
+        <input type="text" id="age" placeholder="Возраст" required>
+    </div>
+    
+    <div class="form-group">
+        <input type="tel" id="phone" placeholder="Телефон" required>
+    </div>
+    
+    <button type="submit" class="submit-btn">Записаться на занятие</button>
+</form>
     </div>
     </div>
     </div>
