@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Музыкальный клуб</title>
+</head>
+<body>
+    <header class="header js-header">
+        <div class="logo"><a href="#"><img src="img/logo.svg" alt="Музыкальный клуб"></a></div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#courses" class="nav-link">Наши курсы</a></li>
+                <li><a href="#teachers" class="nav-link">Преподаватели</a></li>
+                <li><a href="#feedback" class="nav-link">Отзывы</a></li>
+                <li><a href="#trial-lesson" class="nav-link nav-link--highlight">Пробный урок</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="welcome">
+        <img src="img/block1.svg" class="welcome-img" alt="Добро пожаловать">
+    </div>
+
+    <div class="pluses">
+        <div class="content">
+            <h1>музыка — для всех!</h1>
+            <p>Мы уверены, что музыка — это увлечение для любого возраста и призвания</p>
+            
+            <div class="pluses-grid">
+                <div class="pluses-left">
+                    <img src="img/Group 6.svg" alt="Музыкальные инструменты">
+                </div>
+                <div class="pluses-right">
+                    <h2>каждый день:</h2>
+                    <div class="pluses-item">
+                        <img src="img/Sparkling.svg" alt="">
+                        <p>Дети развивают свои таланты с удовольствием</p>
+                    </div>
+                    <div class="pluses-item">
+                        <img src="img/Sparkling.svg" alt="">
+                        <p>Подростки участвуют в музыкальных коллективах и реализуют мечты</p>
+                    </div>
+                    <div class="pluses-item">
+                        <img src="img/Sparkling.svg" alt="">
+                        <p>Взрослые увлекательно проводят досуг с единомышленниками</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="btn"><a href="#trial-lesson"><img src="img/btn.svg" alt="Записаться"></a></div>
+        </div>
+    </div>
+
+    <div class="courses" id="courses">
+        <div class="content">
+            <h1>наши курсы</h1>
+            <p>занятия в школе и дистанционно</p>
+            <div class="assort">
+                <div class="course">
+                    <img src="img/vocal.svg" alt="Вокал">
+                </div>
+                <div class="course">
+                    <img src="img/guitar.svg" alt="Гитара">
+                </div>
+                <div class="course">
+                    <img src="img/drums.svg" alt="Ударные">
+                </div>
+                <div class="course">
+                    <img src="img/electro.svg" alt="Электроинструменты">
+                </div>
+                <div class="course">
+                    <img src="img/keyboard.svg" alt="Клавишные">
+                </div>
+                <div class="course">
+                    <img src="img/ethnic.svg" alt="Этнические">
+                </div>
+                <div class="course">
+                    <img src="img/wind.svg" alt="Духовые">
+                </div>
+                <div class="course">
+                    <img src="img/bowed.svg" alt="Смычковые">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="teachers-block" id="teachers">
+        <div class="content">
+            <h1>подберём преподавателя</h1>
+            <p>Для успешных результатов важен комфорт, взаимопонимание и дружелюбная атмосфера</p>
+            <div class="teachers"><img src="img/teachers.svg" alt="Наши преподаватели"></div>
+        </div>
+    </div>
+
+    <div class="feedback" id="feedback">
+        <div class="content">
+            <h1>впечатления учеников</h1>
+            <p>Более 100 учеников с разными интересами и целями каждый месяц посещают наши школы<br>
+            Общий номер: +7 (ХХХ) ХХХ-ХХ-ХХ</p>
+            
+            <div class="feedback-grid">
+                <div class="feedback-item">
+                    <iframe src="https://yandex.ru/maps-reviews-widget/1055558933?comments" frameborder="0"></iframe>
+                </div>
+                <div class="feedback-item">
+                    <iframe src="https://yandex.ru/map-widget/v1/?ll=41.132138%2C44.999625&mode=poi&poi%5Bpoint%5D=41.131719%2C44.999605&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D1055558933&z=18" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="signup-form" id="trial-lesson">
+        <div class="trial-grid">
+        <div class="trial-item">
+        <h1>ЗАПИШИТЕСЬ НА <span style="color:#01B060">ПРОБНЫЙ УРОК</span></h1>
+        </div>
+        <div class="feedback-item">
+        <p>подберём педагога, выберем программу обучения и составим график посещения</p>
+        <form class="trialForm">        
+            <div class="form-group">
+                <select id="format">
+                    <option value="" disabled selected>Выберите формат</option>
+                    <option value="online">Онлайн</option>
+                    <option value="offline">Оффлайн</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <input type="text" id="name" placeholder="Имя" required>
+            </div>
+
+            <div class="form-group">
+                <input type="text" id="age" placeholder="Возраст" required>
+            </div>
+            
+            <div class="form-group">
+                <input type="tel" id="phone" placeholder="Телефон" required>
+            </div>
+            
+            <button type="submit" onclick="trial()" class="submit-btn"">Записаться на занятие</button>
+            
+        </form>
+    </div>
+    </div>
+    </div>
+
+    <div class="footer">
+        <div class="content">
+            <div class="footer-grid">
+                <div class="footer-contacts">
+                    <div class="footer-logo">
+                        <img src="img/logo2.svg" alt="Музыкальный клуб">
+                    </div>
+                    <p>г. Армавир, ул. Колотушкина, д. 25<br>
+                    г. Армавир, ул. Пушкина, д. 94</p>
+                    <p>Общий номер: +7 (ХХХ) ХХХ-ХХ-ХХ</p>
+                    <div class="footer-social">
+                        <a href="#"><img src="img/Telegram.svg" alt="Telegram"></a>
+                        <a href="#"><img src="img/TikTok.svg" alt="TikTok"></a>
+                        <a href="#"><img src="img/WhatsApp.svg" alt="WhatsApp"></a>
+                        <a href="#"><img src="img/Odnoklassniki.svg" alt="Одноклассники"></a>
+                        <a href="#"><img src="img/VK com.svg" alt="ВКонтакте"></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <p><a href="#courses">Наши курсы</a></p>
+                    <p><a href="#teachers">Преподаватели</a></p>
+                    <p><a href="#feedback">Отзывы и филиалы</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
