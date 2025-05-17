@@ -50,7 +50,7 @@ a {
     width: 90%;
     max-width: 1200px;
     min-width: 370px;
-    height: 80px;
+    height: 5%;
     margin: 0 auto;
     padding: 0 2rem;
     z-index: 1000;
@@ -193,7 +193,6 @@ a {
 @media (min-width: 992px) {
     .header {
         height: 10%;
-
     }
 
     .nav-link {
